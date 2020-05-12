@@ -30,8 +30,6 @@ function Homepage() {
             create the code library.
           </h3>
 
-          <br />
-
           <p>
             The Code Library is a platform where you can store and organize as
             many code snippets as you like.
@@ -39,7 +37,8 @@ function Homepage() {
 
           <p>
             But the code library isn't simply for storing your own code. It's
-            also a place to share your code with people all across the world.
+            also a place to share your code with people all across the world. 
+            (this feature is still in development)
           </p>
 
           <p>
@@ -52,11 +51,11 @@ function Homepage() {
 
           <h2>Instructions for a personal library</h2>
 
-          <p>1) Create an account and login</p>
+          <p>1) Create an account or login</p>
 
-          <p>2) Open the sidebar and press "my library"</p>
+          <p>2) Press "my library"</p>
 
-          <p>3) Add a category and then inside that category add a page</p>
+          <p>3) In the sidebar, add a category and then inside that category add a page</p>
 
           <p>4) Open the page by clicking on it</p>
 
