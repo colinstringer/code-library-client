@@ -1,0 +1,7 @@
+.view-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 50px 80px;
+}
