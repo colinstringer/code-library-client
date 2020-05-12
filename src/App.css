@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header  header"
+    "sidebar main";
+  grid-template-columns: auto 1fr;
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.message {
+  grid-area: message;
+}
+.main {
+  grid-area: main;
+  min-height: 100vh;
+}
