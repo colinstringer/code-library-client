@@ -1,0 +1,18 @@
+.add-example-row {
+  padding: 30px 30px;
+}
+
+.add-example-button {
+  margin-left: 15px;
+  padding: 10px;
+  border: black 1px solid;
+  border-radius: 3px;
+}
+
+.add-example-button:hover {
+  border: black 1px solid;
+}
+
+.add-example-row h2 {
+  margin-bottom: -50px;
+}

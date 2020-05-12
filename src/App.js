@@ -1,48 +1,47 @@
-import React, { useEffect } from "react";
 import "./App.css";
+import React, { useEffect } from "react";
 
 import { Switch, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
-import Loading from "./components/Loading";
-import MessageBox from "./components/MessageBox";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
 
 import { useDispatch, useSelector } from "react-redux";
-import { selectAppLoading } from "./store/appState/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
-import { Jumbotron } from "react-bootstrap";
+import { selectCurrentLibraryUsername } from "./store/appState/selectors";
+import { setCurrentLibraryUsernameDefault } from "./store/appState/actions";
 
-const Home = () => (
-  <Jumbotron>
-    <h1>Home</h1>
-  </Jumbotron>
-);
-const Other = () => (
-  <Jumbotron>
-    <h1>Other</h1>
-  </Jumbotron>
-);
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import ViewPage from "./pages/ViewPage";
+import EditPage from "./pages/EditPage";
+import Homepage from "./pages/Homepage";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectAppLoading);
+  const currentLibraryUsername = useSelector(selectCurrentLibraryUsername);
 
   useEffect(() => {
     dispatch(getUserWithStoredToken());
   }, [dispatch]);
 
+  useEffect(() => {
+    if (currentLibraryUsername === "undefined")
+      dispatch(setCurrentLibraryUsernameDefault());
+  }, [dispatch, currentLibraryUsername]);
+
   return (
-    <div className="App">
-      <Navigation />
-      <MessageBox />
-      {isLoading ? <Loading /> : null}
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/other" component={Other} />
-        <Route path="/signup" component={SignUp} />
-        <Route path="/login" component={Login} />
-      </Switch>
+    <div className="grid-container">
+      <Header />
+      <Sidebar />
+      <div className="main">
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/view-page/:pageId" component={ViewPage} />
+          <Route path="/edit-page/:pageId" component={EditPage} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.homepage {
+  display: grid;
+  grid-template-areas: ". homepage-content .";
+  grid-template-columns: 3fr 8fr 3fr;
+  padding: 100px 0px;
+}
+
+.homepage-content {
+  grid-area: homepage-content;
+  background-color: rgb(250, 250, 250);
+  padding: 72px;
+  border: #d1d1d1 solid 1px;
+  border-radius: 5px;
+}
+
+.homepage h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.homepage h3 {
+  font-size: 25px;
+  margin-top: 50px;
+  font-style: italic;
+}
+
+.homepage p {
+  margin: 20px 0px;
+}
