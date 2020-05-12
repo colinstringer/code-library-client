@@ -1,0 +1,22 @@
+.row {
+  background-color: rgb(245, 245, 245);
+  padding: 0px 30px;
+  margin: 100px 0px;
+  border: #d1d1d1 solid 1px;
+}
+
+.row p {
+  margin: 30px 0px 10px 0px;
+}
+
+.hljs {
+  padding: 30px;
+  margin: 0px 0px 20px 0px;
+  background-color: #131822;
+  border-radius: 4px;
+}
+
+.row textarea {
+  padding: 20px 50px;
+  margin-bottom: 50px;
+}
