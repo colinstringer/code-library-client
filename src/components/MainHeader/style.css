@@ -1,0 +1,25 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-bottom: #888 solid 1px;
+}
+
+.main-header a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 7px 50px 7px 50px;
+  transition: 0.4s;
+  border-right: #888 solid 1px;
+}
+
+.main-header a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #131822;
+  padding: 7px 50px 7px 50px;
+  opacity: 0.8;
+  transition: 0.4s;
+}
