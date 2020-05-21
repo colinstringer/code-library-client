@@ -3,13 +3,25 @@
 }
 
 .add-example-button {
-  margin-left: 15px;
+  background-color: #131822;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 0 0 15px;
   padding: 10px;
+  
   border: black 1px solid;
   border-radius: 3px;
+  
+  transition: 0.4s;
 }
 
 .add-example-button:hover {
+  background-color: rgb(232, 234, 238);
+  color: #131822;
+  text-decoration: none;
+
+  margin: 0px;
+
   border: black 1px solid;
 }
 

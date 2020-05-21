@@ -1,5 +1,11 @@
-.menu-icon {
-  margin-left: 20px;
+.close-menu {
+  margin: 10px 10px 0 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.open-menu {
+  margin: 10px 10px 0 20px;
   font-size: 25px;
   cursor: pointer;
 }

@@ -13,13 +13,13 @@ function SidebarOpener() {
   const dispatch = useDispatch();
   const isSidebarOpen = useSelector(selectIsSidebarOpen);
 
-  const menuIcon = isSidebarOpen ? <FaTimes style={{fontSize:"20px"}} /> : <FiMenu />;
+  const menuIcon = isSidebarOpen ? <FaTimes className="close-menu" /> : <FiMenu className="open-menu" />;
   function toggleSidebar() {
     dispatch(toggleIsSidebarOpen());
   }
 
   return (
-    <div onClick={toggleSidebar} className="menu-icon">
+    <div onClick={toggleSidebar}>
       {menuIcon}
     </div>
   );
