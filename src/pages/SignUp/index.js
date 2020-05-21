@@ -37,6 +37,7 @@ export default function SignUp() {
   return (
     <>
       <MessageBox />
+      
       <Container>
         <Form as={Col} md={{ span: 6, offset: 3 }} className="mt-5">
           <h1 className="mt-5 mb-5">Signup</h1>

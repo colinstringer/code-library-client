@@ -1,14 +1,15 @@
 .homepage {
   display: grid;
   grid-template-areas: ". homepage-content .";
-  grid-template-columns: 3fr 8fr 3fr;
+  grid-template-columns: 2fr 8fr 3fr;
   padding: 100px 0px;
 }
 
 .homepage-content {
   grid-area: homepage-content;
   background-color: rgb(250, 250, 250);
-  padding: 72px;
+  margin-top: 10px;
+  padding: 30px 72px 72px 72px;
   border: #d1d1d1 solid 1px;
   border-radius: 5px;
 }
