@@ -4,6 +4,7 @@ export const APP_LOADING = "APP_LOADING";
 export const APP_DONE_LOADING = "APP_DONE_LOADING";
 export const SET_MESSAGE = "SET_MESSAGE";
 export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
+export const TOGGLE_IS_SIDEBAR_OPEN = "TOGGLE_IS_SIDEBAR_OPEN";
 export const SET_CURRENT_LIBRARY_USERNAME_DEFAULT =
   "SET_CURRENT_LIBRARY_USERNAME_DEFAULT";
 export const SET_CURRENT_LIBRARY_USERNAME = "SET_CURRENT_LIBRARY_USERNAME";
@@ -11,6 +12,7 @@ export const SET_CURRENT_LIBRARY_USERNAME = "SET_CURRENT_LIBRARY_USERNAME";
 export const appLoading = () => ({ type: APP_LOADING });
 export const appDoneLoading = () => ({ type: APP_DONE_LOADING });
 export const clearMessage = () => ({ type: CLEAR_MESSAGE });
+export const toggleIsSidebarOpen = () => ({ type: TOGGLE_IS_SIDEBAR_OPEN });
 export const setCurrentLibraryUsernameDefault = () => ({
   type: SET_CURRENT_LIBRARY_USERNAME_DEFAULT,
 });
