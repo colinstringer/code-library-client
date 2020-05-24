@@ -8,26 +8,16 @@
   border-right: #888 solid 1px;
 }
 
+.sidebar-head {
+  display:flex;
+  flex-direction: row;
+}
+
 .sidebar h3 {
   color: black;
   font-weight: bold;
   padding: 10px 40px 5px 10px;
   transition: 0.2s;
-}
-
-.sidebar a {
-  color: black;
-  text-decoration: none;
-  padding: 10px 50px 10px 20px;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  background-color: #131822;
-  color: white;
-  text-decoration: none;
-  transition: 0.2s;
-  border-radius: 2px;
 }
 
 .sidebar input {
@@ -42,4 +32,12 @@
 .sidebar input:focus {
   background-color: rgb(202, 238, 238);
   opacity: 1;
+}
+
+.library-selector {
+  margin: 10px 0;
+  padding: 2px 2px 2px 2px;
+  background-color: #fbfbfb;
+  border: #131822 1px solid;
+  transition: 0.2s;
 }
